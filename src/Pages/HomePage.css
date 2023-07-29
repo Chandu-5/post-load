@@ -1,0 +1,151 @@
+.r-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.r-head {
+    margin-bottom: 2rem;
+}
+
+.r-card {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 40rem;
+    margin: auto;
+    transition: all 300ms ease-in;
+}
+
+.r-card>img {
+    width: 100%;
+    max-width: 15rem;
+    border-radius: 15px;
+}
+
+.r-card>img:hover {
+    scale: 1.1;
+    transition: all 300ms ease-in-out;
+}
+
+.r-card>:nth-child(2) {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.r-card>:nth-child(3) {
+    font-size: 1.5rem;
+}
+
+.r-card>:nth-child(4) {
+    font-size: 0.7rem;
+    width: 15rem;
+}
+
+.r-card:hover {
+    scale: 1.025;
+    cursor: pointer;
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(136, 160, 255, 0.46) 217.91%);
+    box-shadow: 0px 72px 49px -51px rgba(136, 160, 255, 0.21);
+}
+
+
+.primaryText {
+    color: #1f3e72;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.secondaryText {
+    color: rgb(140 139 139);
+    font-size: 0.7rem;
+}
+
+.side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+button {
+    background-color: orange;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(239, 171, 44);
+}
+
+
+section {
+    display: flex;
+    align-items: center;
+    padding: 5rem;
+}
+
+@media (max-width: 960px) {
+    .r-head {
+        align-items: center;
+    }
+
+    .r-card {
+        display: flex;
+        flex-direction: row;
+        max-width: 30rem;
+        margin: auto;
+    }
+
+    .r-card>img {
+        width: 100%;
+        max-width: 10rem;
+        border-radius: 15px;
+    }
+
+    .primaryText {
+        color: #1f3e72;
+        font-size: 0.8rem;
+    }
+    
+    
+
+    section {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+    }
+}
+
+
+@media (max-width: 430px) {
+    .primaryText {
+        color: #1f3e72;
+        font-size: 0.7rem;
+    }
+    .r-card>img {
+        width: 100%;
+        max-width: 10rem;
+        border-radius: 15px;
+    }
+    section {
+        display: flex;
+        align-items: center;
+        padding: 0px;
+    }
+    .secondaryText {
+        color: rgb(140 139 139);
+        font-size: 0.6rem;
+    }
+}
